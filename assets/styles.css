@@ -249,3 +249,69 @@
 .quick-order-strip span{color:#e8d7e2}.quick-order-strip a{background:var(--pink);color:#080008;border-radius:999px;padding:12px 18px;font-weight:1000}
 .review-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px}.hours-card{display:inline-flex;flex-direction:column;gap:4px;background:rgba(255,255,255,.06);border:1px solid rgba(255,45,168,.32);border-radius:22px;padding:16px 20px;margin:16px 0 12px}.hours-card strong{font-family:Anton,sans-serif;font-size:30px;color:var(--pink);text-transform:uppercase;line-height:1}.hours-card span{font-weight:900;letter-spacing:.04em}.floating-cta{position:fixed;right:18px;bottom:18px;z-index:30;display:flex;gap:10px;align-items:center;background:rgba(5,5,5,.82);border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 55px rgba(0,0,0,.46),0 0 28px rgba(255,45,168,.22);backdrop-filter:blur(14px);border-radius:999px;padding:10px}.floating-cta a{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:999px;padding:0 14px;font-weight:1000;text-transform:uppercase;font-size:.82rem;letter-spacing:.04em;background:rgba(255,255,255,.08)}.floating-cta .float-order{background:var(--pink);color:#080008}.footer{padding-bottom:90px}
 @media(max-width:620px){.quick-order-strip{border-radius:24px;gap:10px;padding:16px}.quick-order-strip span{font-size:.9rem;text-align:center}.quick-order-strip a{width:100%;text-align:center}.floating-cta{left:10px;right:10px;bottom:10px;justify-content:space-between;border-radius:22px}.floating-cta a{flex:1;padding:0 8px;font-size:.72rem;min-height:48px}.footer{padding-bottom:105px}.review-actions .btn{width:100%}.hours-card{width:100%;align-items:center}.love-grid div{padding:20px}}
+
+/* v14: Logo-first hero. Brand first, food right after. */
+.hero{
+  min-height:calc(100vh - 86px) !important;
+  padding:90px clamp(18px,4vw,70px) 90px !important;
+}
+.hero .actions{margin-top:32px !important;}
+.hero-logo-transparent{
+  width:min(1050px,94vw) !important;
+  max-height:340px !important;
+}
+.logo-subtitle{
+  margin-top:10px !important;
+  margin-bottom:8px !important;
+}
+.hero h1{
+  font-size:clamp(48px,7.2vw,116px) !important;
+}
+.hero-lead{display:none !important;}
+.brand-food{
+  display:grid;
+  grid-template-columns:.62fr 1fr;
+  gap:32px;
+  align-items:center;
+  padding-top:60px !important;
+  padding-bottom:80px !important;
+}
+.brand-food h2{
+  font-family:Anton,Bebas Neue,sans-serif;
+  font-size:clamp(48px,7vw,100px);
+  line-height:.9;
+  margin:0;
+  text-transform:uppercase;
+}
+.brand-food p:not(.eyebrow){
+  color:#ddd;
+  font-size:1.15rem;
+  line-height:1.55;
+  max-width:520px;
+}
+.brand-food-img{position:relative;}
+.brand-food-img img{
+  width:100%;
+  border-radius:40px;
+  border:1px solid rgba(255,45,168,.28);
+  box-shadow:0 26px 90px rgba(0,0,0,.55), 0 0 58px rgba(255,45,168,.22);
+}
+.brand-food-img .stamp{
+  display:block !important;
+  right:18px !important;
+  bottom:18px !important;
+}
+@media(max-width:980px){
+  .brand-food{grid-template-columns:1fr;text-align:center;}
+  .brand-food p:not(.eyebrow){margin-left:auto;margin-right:auto;}
+}
+@media(max-width:620px){
+  .hero{min-height:auto !important;padding:56px 16px 58px !important;}
+  .hero-logo-transparent{width:min(650px,100vw) !important;max-height:230px !important;}
+  .logo-subtitle{font-size:31px !important;}
+  .hero h1{font-size:clamp(42px,14vw,62px) !important;}
+  .brand-food{padding-top:32px !important;padding-bottom:54px !important;gap:22px;}
+  .brand-food h2{font-size:44px;}
+  .brand-food-img img{border-radius:24px;}
+  .brand-food-img .stamp{display:none !important;}
+}
