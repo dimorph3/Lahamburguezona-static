@@ -442,3 +442,5 @@
   .follow-banner h2{font-size:72px}
   .follow-banner .follow-main{min-width:0;width:100%}
 }
+
+.hero-note{display:inline-flex;margin:8px 0 0;padding:10px 14px;border-radius:999px;background:rgba(255,45,168,.13);border:1px solid rgba(255,45,168,.38);color:#fff;font-weight:900;font-size:.94rem;letter-spacing:.02em}.pickup-main{font-size:1.05rem;padding:18px 30px}.pickup-card{transform:scale(1.03);box-shadow:0 0 34px rgba(255,45,168,.38)}.pickup-card:hover{transform:scale(1.03) translateY(-6px)}@media(max-width:620px){.hero-note{border-radius:18px;text-align:center;line-height:1.35}.pickup-card{transform:none}.pickup-card:hover{transform:translateY(-6px)}}
