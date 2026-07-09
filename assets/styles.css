@@ -211,3 +211,18 @@
   .hero-art{width:100% !important; margin-top:18px !important; border-radius:24px;}
   .hero-art img{border-radius:24px !important; min-height:auto;}
 }
+
+/* v11 stability fix: no hidden reveal sections, tighter mobile spacing */
+.reveal,
+.reveal.visible{
+  opacity:1 !important;
+  transform:none !important;
+  transition:none !important;
+}
+@media(max-width:620px){
+  .section{padding-top:54px !important; padding-bottom:54px !important;}
+  .about{padding-bottom:38px !important;}
+  #menu{padding-top:38px !important;}
+  .section-head{margin-bottom:28px !important;}
+  .about-text p{margin:0 0 14px !important;}
+}
