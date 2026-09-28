@@ -480,3 +480,16 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--pink2);outline-offs
 .secret-menu p:not(.eyebrow){color:#ddd;line-height:1.6;margin:12px 0 0}
 .secret-menu .mini-btn{flex-shrink:0;margin:0;text-align:center;min-height:44px}
 @media(max-width:620px){.secret-menu{align-items:flex-start;flex-direction:column;padding:22px}.secret-menu .mini-btn{width:100%}}
+
+/* v23 complete menu navigation and visible photo-layer travel */
+.menu-sections{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.menu-sections a{padding:12px 18px;border:1px solid var(--pink);border-radius:999px;font-weight:800;font-size:14px;background:#050505}
+.menu-group-title{grid-column:1/-1;font:clamp(30px,4vw,48px) Anton,sans-serif;color:var(--pink);margin:20px 0 0;scroll-margin-top:110px}
+#signature-burger,#extras,#sides{scroll-margin-top:110px}
+.burger-scroll-hint{color:var(--pink2);font-size:12px;font-weight:800;letter-spacing:.12em;margin:18px 0 0;text-align:center}
+.burger-scene{aspect-ratio:1.15;max-width:560px}
+.burger-layers{width:110%;left:-5%;top:-12%}
+.site-version{font-size:12px;color:var(--pink2)!important}
+@media(max-width:620px){#signature-burger,#extras,#sides,.menu-group-title{scroll-margin-top:95px}.menu-sections{gap:8px}.menu-sections a{padding:12px;font-size:12px}.burger-scene{width:100%}}
+
+.burger-layers{top:-7%}

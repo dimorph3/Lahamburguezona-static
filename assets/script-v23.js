@@ -20,9 +20,9 @@ function drawBurger() {
   scheduled = false;
   if (!scene || !layers) return;
   const rect = scene.getBoundingClientRect();
-  const start = Math.min(innerHeight * .78, innerHeight - rect.height * .35);
-  const progress = reducedMotion.matches ? 0 : Math.max(0, Math.min(1, (start - rect.top) / Math.max(200, innerHeight * .6)));
-  layers.style.setProperty('--spread', `${(progress * Math.min(18, rect.width * .028)).toFixed(2)}px`);
+  const start = innerHeight * .92;
+  const progress = (reducedMotion.matches || scrollY <= 1) ? 0 : Math.max(0, Math.min(1, (start - rect.top) / Math.max(180, innerHeight * .45)));
+  layers.style.setProperty('--spread', `${(progress * Math.min(34, rect.width * .07)).toFixed(2)}px`);
 }
 function schedule() { if (!scheduled) { scheduled = true; requestAnimationFrame(drawBurger); } }
 addEventListener('scroll', schedule, {passive:true});

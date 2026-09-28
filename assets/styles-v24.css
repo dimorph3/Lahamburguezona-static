@@ -480,3 +480,38 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--pink2);outline-offs
 .secret-menu p:not(.eyebrow){color:#ddd;line-height:1.6;margin:12px 0 0}
 .secret-menu .mini-btn{flex-shrink:0;margin:0;text-align:center;min-height:44px}
 @media(max-width:620px){.secret-menu{align-items:flex-start;flex-direction:column;padding:22px}.secret-menu .mini-btn{width:100%}}
+
+/* v23 complete menu navigation and visible photo-layer travel */
+.menu-sections{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.menu-sections a{padding:12px 18px;border:1px solid var(--pink);border-radius:999px;font-weight:800;font-size:14px;background:#050505}
+.menu-group-title{grid-column:1/-1;font:clamp(30px,4vw,48px) Anton,sans-serif;color:var(--pink);margin:20px 0 0;scroll-margin-top:110px}
+#signature-burger,#extras,#sides{scroll-margin-top:110px}
+.burger-scroll-hint{color:var(--pink2);font-size:12px;font-weight:800;letter-spacing:.12em;margin:18px 0 0;text-align:center}
+.burger-scene{aspect-ratio:1.15;max-width:560px}
+.burger-layers{width:110%;left:-5%;top:-12%}
+.site-version{font-size:12px;color:var(--pink2)!important}
+@media(max-width:620px){#signature-burger,#extras,#sides,.menu-group-title{scroll-margin-top:95px}.menu-sections{gap:8px}.menu-sections a{padding:12px;font-size:12px}.burger-scene{width:100%}}
+
+.burger-layers{top:-7%}
+
+/* v24 annotated whole-photo entrance; larger menu photography. */
+.ingredient-section{background:radial-gradient(ellipse at 50% 40%,rgba(255,45,168,.2),transparent 65%),#080508;overflow:hidden;padding-block:65px}
+.ingredient-section .section-head{margin-bottom:0}.ingredient-section h2{font-size:clamp(40px,6vw,84px);line-height:1}
+.ingredient-diagram{display:block;width:100%;max-width:1440px;margin:-10px auto -55px;overflow:visible}
+.ingredient-callout text{fill:white;font-family:'Bebas Neue',sans-serif;font-size:28px}.ingredient-callout .patty-note{fill:#ffb5de;font-family:Inter,sans-serif;font-size:17px}
+.ingredient-callout path{fill:none;stroke:#ff2da8;stroke-width:2.5;stroke-dasharray:500;stroke-dashoffset:0}.ingredient-callout circle{fill:white;stroke:#ff2da8;stroke-width:4}
+.ingredient-mobile{display:none}.ingredient-section .actions{position:relative;margin-top:0}.replay-ingredients{color:white;cursor:pointer;font-family:inherit}
+@keyframes ingredientIn{from{opacity:0;translate:0 10px}to{opacity:1;translate:0 0}}
+@keyframes traceLine{from{stroke-dashoffset:500}to{stroke-dashoffset:0}}
+@keyframes burgerIn{from{opacity:.35;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+.ingredient-section.is-entering .ingredient-callout{animation:ingredientIn .65s ease both;animation-delay:var(--delay)}
+.ingredient-section.is-entering .ingredient-callout path{animation:traceLine 1s ease both;animation-delay:var(--delay)}
+.ingredient-section.is-entering .whole-burger{animation:burgerIn 1.2s ease both;transform-origin:center}
+#menu .product-grid.wide{grid-template-columns:repeat(2,minmax(0,1fr))}
+#menu .product-card{background:linear-gradient(145deg,rgba(255,45,168,.12),rgba(255,255,255,.055));border-color:rgba(255,255,255,.15)}
+#menu .product-card>img{aspect-ratio:3/2;object-fit:cover;padding:0;border-radius:22px;background:#080508}
+#menu .product-card h3{font-size:clamp(32px,3vw,48px)}
+#menu #signature-burger{grid-column:1/-1;display:grid;grid-template-columns:1.1fr 1fr;align-items:center}
+#menu #signature-burger>img{aspect-ratio:4/3}
+@media(max-width:700px){.ingredient-diagram{display:none}.ingredient-mobile{display:block}.ingredient-mobile>img{width:100%;margin:-35px auto -25px;max-height:380px;object-fit:contain}.ingredient-mobile ol{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 18px;margin:0 0 26px}.ingredient-mobile li{padding:12px 0;border-bottom:1px solid rgba(255,45,168,.3);font-size:14px;font-weight:600}.ingredient-mobile small{display:block;color:var(--pink2);font-size:11px;margin-top:5px}.ingredient-section.is-entering li{animation:ingredientIn .65s ease both;animation-delay:var(--delay)}.ingredient-section.is-entering .ingredient-mobile>img{animation:burgerIn 1.2s ease both}#menu .product-grid.wide{grid-template-columns:1fr}#menu #signature-burger{display:flex}.ingredient-section{padding-top:45px!important;padding-bottom:45px!important}.ingredient-section .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){.replay-ingredients{display:none}.ingredient-callout,.whole-burger,.ingredient-mobile li{animation:none!important;opacity:1!important;transform:none!important}}

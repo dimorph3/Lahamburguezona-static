@@ -7,11 +7,11 @@
   <meta name="description" content="La HamburgueZona in Gilroy, CA. Mexican Style Premium Burger, giant combos, Cocorozona, Papazotas, wings, salads and churros." />
   <meta property="og:title" content="La HamburgueZona" />
   <meta property="og:description" content="The reason you came. Mexican Style Premium Burger in Gilroy, CA." />
-  <meta property="og:image" content="assets/images/hero.webp" />
+  <meta property="og:image" content="assets/images/hero.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/styles-v24.css" />
 </head>
 <body>
   <div class="noise"></div>
@@ -19,8 +19,8 @@
     <a class="brand" href="#top" aria-label="La HamburgueZona home">
       <img src="assets/images/logo-clean.png" alt="La HamburgueZona logo" />
     </a>
-    <button class="menu-toggle" aria-label="Open menu">☰</button>
-    <nav class="nav-links">
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation">☰</button>
+    <nav class="nav-links" id="site-navigation">
       <a href="#combos">Combos</a>
       <a href="#menu">Menu</a>
       <a href="#about">About</a>
@@ -62,7 +62,7 @@
         <a class="btn primary" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order for Pickup</a>
       </div>
       <div class="brand-food-img">
-        <img src="assets/images/hero.webp" alt="Treat Yourself combo with La HamburgueZona burger, papazotas and Cocorozona" />
+        <img src="assets/images/hero.png" alt="Treat Yourself combo with La HamburgueZona burger, papazotas and Cocorozona" />
         <div class="stamp">GO BIG<br>OR GO HOME</div>
       </div>
     </section>
@@ -80,36 +80,39 @@
       </div>
     </section>
 
-    <section id="combos" class="section combos reveal">
-      <div class="section-head">
-        <p class="eyebrow">House favorites</p>
-        <h2>Pick your level of regret.</h2>
-        <p>Five combos. One rule: no tiny portions pretending to be premium.</p>
-      </div>
-
-      <article class="feature-card">
-        <img src="assets/images/combo-treat-yourself.webp" alt="Treat Yourself combo" />
+<section id="ingredients" class="section ingredient-section"><div class="section-head"><p class="eyebrow">The Hamburguezona</p><h2>EVERY LAYER<br>HAS A REASON.</h2></div><svg class="ingredient-diagram" viewBox="0 0 1440 920" role="img" aria-labelledby="diagram-title"><title id="diagram-title">La HamburgueZona ingredients, from top bun to bottom bun</title><image class="whole-burger" href="assets/images/burger-cutout.png" x="235" y="-160" width="970" height="1050" preserveAspectRatio="xMidYMid meet"/><g class="ingredient-callout" style="--delay:0ms"><path d="M 1135 210 H 1020 L 915 228"/><circle cx="915" cy="228" r="5"/><text x="1155" y="217" text-anchor="start">Mexican Bun</text></g><g class="ingredient-callout" style="--delay:65ms"><path d="M 305 295 H 420 L 535 350"/><circle cx="535" cy="350" r="5"/><text x="285" y="302" text-anchor="end">Mexican Mayo</text></g><g class="ingredient-callout" style="--delay:130ms"><path d="M 1135 350 H 1020 L 890 368"/><circle cx="890" cy="368" r="5"/><text x="1155" y="357" text-anchor="start">American Cheese</text></g><g class="ingredient-callout" style="--delay:195ms"><path d="M 305 400 H 420 L 630 386"/><circle cx="630" cy="386" r="5"/><text x="285" y="407" text-anchor="end">Signature Beef Patty</text><text class="patty-note" x="285" y="431" text-anchor="end">150 g · Secret Recipe</text></g><g class="ingredient-callout" style="--delay:260ms"><path d="M 1135 450 H 1020 L 905 410"/><circle cx="905" cy="410" r="5"/><text x="1155" y="457" text-anchor="start">Grilled Ham</text></g><g class="ingredient-callout" style="--delay:325ms"><path d="M 305 500 H 420 L 545 455"/><circle cx="545" cy="455" r="5"/><text x="285" y="507" text-anchor="end">Grilled Sausage</text></g><g class="ingredient-callout" style="--delay:390ms"><path d="M 1135 535 H 1020 L 755 480"/><circle cx="755" cy="480" r="5"/><text x="1155" y="542" text-anchor="start">Grilled Mozzarella</text></g><g class="ingredient-callout" style="--delay:455ms"><path d="M 1135 570 H 1020 L 865 507"/><circle cx="865" cy="507" r="5"/><text x="1155" y="577" text-anchor="start">Ketchup</text></g><g class="ingredient-callout" style="--delay:520ms"><path d="M 305 610 H 420 L 625 540"/><circle cx="625" cy="540" r="5"/><text x="285" y="617" text-anchor="end">Avocado</text></g><g class="ingredient-callout" style="--delay:585ms"><path d="M 1135 650 H 1020 L 707 565"/><circle cx="707" cy="565" r="5"/><text x="1155" y="657" text-anchor="start">Onion</text></g><g class="ingredient-callout" style="--delay:650ms"><path d="M 305 690 H 420 L 657 591"/><circle cx="657" cy="591" r="5"/><text x="285" y="697" text-anchor="end">Tomato</text></g><g class="ingredient-callout" style="--delay:715ms"><path d="M 1135 725 H 1020 L 856 606"/><circle cx="856" cy="606" r="5"/><text x="1155" y="732" text-anchor="start">Lettuce</text></g><g class="ingredient-callout" style="--delay:780ms"><path d="M 305 760 H 420 L 668 617"/><circle cx="668" cy="617" r="5"/><text x="285" y="767" text-anchor="end">Mexican Mayo</text></g><g class="ingredient-callout" style="--delay:845ms"><path d="M 1135 795 H 1020 L 765 642"/><circle cx="765" cy="642" r="5"/><text x="1155" y="802" text-anchor="start">Mexican Bun</text></g></svg><div class="ingredient-mobile"><img src="assets/images/burger-cutout.png" alt="La HamburgueZona signature burger" width="1448" height="1086"><ol><li style="--delay:0ms">Mexican Bun</li><li style="--delay:50ms">Mexican Mayo</li><li style="--delay:100ms">American Cheese</li><li style="--delay:150ms">Signature Beef Patty<small>150 g · Secret Recipe</small></li><li style="--delay:200ms">Grilled Ham</li><li style="--delay:250ms">Grilled Sausage</li><li style="--delay:300ms">Grilled Mozzarella</li><li style="--delay:350ms">Ketchup</li><li style="--delay:400ms">Avocado</li><li style="--delay:450ms">Onion</li><li style="--delay:500ms">Tomato</li><li style="--delay:550ms">Lettuce</li><li style="--delay:600ms">Mexican Mayo</li><li style="--delay:650ms">Mexican Bun</li></ol></div><div class="actions"><button class="btn ghost replay-ingredients" type="button">Replay the details</button><a class="btn primary" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order for pickup</a><a class="btn ghost" href="#menu">Explore the full menu</a></div></section>
+    <section id="menu" class="section menu reveal">
+      <div class="section-head"><p class="eyebrow">The complete menu</p><h2>THE FULL MENU.</h2><p>Our signature burger, all 5 combos, sides, wings, salads, drinks &amp; dessert.</p><nav class="menu-sections" aria-label="Menu categories"><a href="#signature-burger">Burger</a><a href="#combos">Combos 1–5</a><a href="#sides">Sides &amp; more</a><a href="#extras">Extras</a></nav></div>
+      <div class="product-grid wide">
+<article id="signature-burger" class="product-card reveal"><img src="assets/images/hamburguezona-solo.png" alt="La HamburgueZona burger"><div><p class="label">Signature Burger</p><h3>LA HAMBURGUEZONA <span>$13</span></h3><p>Signature meat, sausage, ham, avocado, American cheese, mozzarella cheese, lettuce, tomato, onion, Mexican mayo and ketchup on a Mexican bun.</p><strong>The reason you came. Solita también pega duro.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<h3 id="combos" class="menu-group-title">COMBOS 1–5</h3><article class="product-card reveal">
+        <img src="assets/images/combo-treat-yourself.png" alt="Treat Yourself combo" />
         <div>
-          <p class="label">⭐ Combo 1 / Customer Favorite</p>
+          <p class="label">⭐ Combo #1 / Customer Favorite</p>
           <h3>TREAT YOURSELF <span>$22</span></h3>
           <p>La HamburgueZona + Papazotas + Cocorozona.</p>
           <strong>You earned this. Don’t waste it.</strong>
           <a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a>
         </div>
       </article>
-
-      <div class="quick-order-strip">
-        <strong>Ya se antojó.</strong>
-        <span>Order direct for pickup, or use DoorDash for delivery.</span>
-        <a href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order Pickup</a>
+<article class="product-card reveal"><img src="assets/images/combo-2-plato.png" alt="Play It Safe combo"><div><p class="label">Combo #2</p><h3>PLAY IT SAFE <span>$19</span></h3><p>La HamburgueZona + Papazotas + soda.</p><strong>La decisión responsable... más o menos.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal"><img src="assets/images/combo-3-plato.png" alt="Keep It Simple combo"><div><p class="label">Combo #3</p><h3>KEEP IT SIMPLE <span>$17</span></h3><p>La HamburgueZona + Papazotas.</p><strong>Sin pensarle tanto.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal"><img src="assets/images/combo-4-centrado.png" alt="No Regrets combo"><div><p class="label">Combo #4</p><h3>NO REGRETS <span>$25</span></h3><p>La HamburgueZona + Papazotas Atascadas + soda.</p><strong>Ya sabías que ibas a terminar aquí. El Hingue su.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal"><img src="assets/images/combo-5-propuesta.png" alt="Menos Regret combo"><div><p class="label">Combo #5</p><h3>MENOS REGRET <span>$28</span></h3><p>La HamburgueZona + Papazotas Atascadas + Cocorozona.</p><strong>Porque aquí no se viene uno a limitar.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<h3 id="sides" class="menu-group-title">SIDES, WINGS &amp; MORE</h3><article class="product-card reveal"><img src="assets/images/papazotas.jpeg" alt="Papazotas"><div><p class="label">The Sidekick</p><h3>PAPAZOTAS <span>$5</span></h3><p>Signature fries para acompañar... o no compartir.</p><strong>Crispy. Golden. Dangerous.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal"><img src="assets/images/atascadas-propuesta.png" alt="Papazotas Atascadas"><div><p class="label">Loaded Favorite</p><h3>PAPAZOTAS ATASCADAS <span>$12</span></h3><p>Loaded with nacho cheese, pico de gallo, guacamole, sour cream and signature meat.</p><strong>Ya valió madre la dieta.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal"><img src="assets/images/alononas-buffalo.jpeg" alt="Buffalo Alononas"><div><p class="label">Alononas</p><h3>ALONONAS BUFFALO <span>$14</span></h3><p>Served with one side of ranch.</p><strong>The messy choice.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal"><img src="assets/images/alononas-bbq.jpeg" alt="BBQ Alononas"><div><p class="label">Alononas</p><h3>ALONONAS BBQ <span>$14</span></h3><p>Served with one side of ranch.</p><strong>Sweet... but dangerous.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal"><img src="assets/images/saladona.jpeg" alt="Saladona"><div><p class="label">Fresh Side</p><h3>SALADONA <span>$12</span></h3><p>Mixed greens, romaine, cucumber, pepitas, elote dorado, tortilla chips, cilantro dressing and cotija cheese.</p><strong>Fresh... but still very HamburgueZona.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal"><img src="assets/images/saladona-meat.jpeg" alt="Saladona with meat"><div><p class="label">Protein Upgrade</p><h3>SALADONA WITH MEAT <span>$15</span></h3><p>Same fresh base, leveled up with signature meat.</p><strong>Más power, más sabor.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal"><img src="assets/images/cocorozona.jpeg" alt="Cocorozona"><div><p class="label">Signature Drink</p><h3>COCOROZONA <span>$6</span></h3><p>Our star drink. Because you’re fancy, but you also know how to enjoy life.</p><strong>Straw included. Good vibes guaranteed.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
+<article class="product-card reveal churros-card"><img src="assets/images/churros-chocolate.png" alt="Churros with optional chocolate dip, add $2"><div><p class="label">Save Room</p><h3>CHURROS <span>$5</span></h3><p>Regular cinnamon sugar or strawberry filled. Add melted chocolate on the side for $2.</p><strong>Dessert isn’t optional.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
       </div>
-
-      <div class="product-grid">
-        <article class="product-card reveal"><img src="assets/images/combo-play-it-safe.webp" alt="Play It Safe combo"><div><p class="label">Combo 2</p><h3>PLAY IT SAFE <span>$19</span></h3><p>La HamburgueZona + Papazotas + Mexican Coke.</p><strong>La decisión responsable... más o menos.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/combo-keep-it-simple.webp" alt="Keep It Simple combo"><div><p class="label">Combo 3</p><h3>KEEP IT SIMPLE <span>$17</span></h3><p>La HamburgueZona + Papazotas.</p><strong>Sin pensarle tanto.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/combo-no-regrets.webp" alt="No Regrets combo"><div><p class="label">Combo 4</p><h3>NO REGRETS <span>$25</span></h3><p>La HamburgueZona + Papazotas Atascadas + Mexican Coke.</p><strong>Ya sabías que ibas a terminar aquí. El Hingue su.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/combo-menos-regret.webp" alt="Menos Regret combo"><div><p class="label">Combo 5</p><h3>MENOS REGRET <span>$28</span></h3><p>La HamburgueZona + Papazotas Atascadas + Cocorozona.</p><strong>Porque aquí no se viene uno a limitar.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-      </div>
+      <div id="extras" class="menu-extras"><h3>EXTRAS / SIDES</h3><dl><div><dt>Ranch</dt><dd>$1</dd></div><div><dt>Cilantro dressing</dt><dd>$1</dd></div><div><dt>Sour cream</dt><dd>$1</dd></div><div><dt>Pico de gallo</dt><dd>$1</dd></div><div><dt>Nacho cheese</dt><dd>$1</dd></div><div><dt>Extra patty</dt><dd>$4</dd></div><div><dt>Tortilla chips</dt><dd>$1</dd></div><div><dt>Avocado</dt><dd>$2</dd></div><div><dt>Cotija cheese</dt><dd>$1</dd></div></dl><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div>
+      <aside class="secret-menu" aria-labelledby="secret-menu-title">
+        <div><p class="eyebrow">A little insider tip</p><h3 id="secret-menu-title">THERE’S A SECRET MENU.</h3><p>Not everything is on the menu. Ask us what’s available when you visit.</p></div>
+        <a class="mini-btn" href="tel:14083371790">Call &amp; ask</a>
+      </aside>
     </section>
 
     <section id="about" class="section about reveal">
@@ -126,24 +129,7 @@
       </div>
     </section>
 
-    <section id="menu" class="section menu reveal">
-      <div class="section-head">
-        <p class="eyebrow">Signature menu</p>
-        <h2>Built for cravings.</h2>
-        <p>Fresh, bold and dangerous enough to make “just one bite” a lie.</p>
-      </div>
-      <div class="product-grid wide">
-        <article class="product-card reveal"><img src="assets/images/hamburguezona-solo.webp" alt="La HamburgueZona burger"><div><p class="label">Signature Burger</p><h3>LA HAMBURGUEZONA <span>$13</span></h3><p>Signature meat, sausage, ham, avocado, American cheese, mozzarella cheese, lettuce, tomato, onion, Mexican mayo and ketchup on a Mexican bun.</p><strong>The reason you came. Solita también pega duro.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/cocorozona.webp" alt="Cocorozona"><div><p class="label">Signature Drink</p><h3>COCOROZONA <span>$6</span></h3><p>Our star drink. Because you’re fancy, but you also know how to enjoy life.</p><strong>Straw included. Good vibes guaranteed.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/papazotas.webp" alt="Papazotas"><div><p class="label">The Sidekick</p><h3>PAPAZOTAS <span>$5</span></h3><p>Signature fries para acompañar... o no compartir.</p><strong>Crispy. Golden. Dangerous.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/alononas-buffalo.webp" alt="Buffalo Alononas"><div><p class="label">Alononas</p><h3>ALONONAS BUFFALO <span>$15</span></h3><p>Served with one side of ranch.</p><strong>The messy choice.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/alononas-bbq.webp" alt="BBQ Alononas"><div><p class="label">Alononas</p><h3>ALONONAS BBQ <span>$15</span></h3><p>Served with one side of ranch.</p><strong>Sweet... but dangerous.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/saladona.webp" alt="Saladona"><div><p class="label">Fresh Side</p><h3>SALADONA <span>$12</span></h3><p>Mixed greens, romaine, cucumber, pepitas, elote dorado, tortilla chips, cilantro dressing and cotija cheese.</p><strong>Fresh... but still very HamburgueZona.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/saladona-meat.webp" alt="Saladona with meat"><div><p class="label">Protein Upgrade</p><h3>SALADONA WITH MEAT <span>$15</span></h3><p>Same fresh base, leveled up with signature meat.</p><strong>Más power, más sabor.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal"><img src="assets/images/papazotas-atascadas.webp" alt="Papazotas Atascadas"><div><p class="label">Loaded Favorite</p><h3>PAPAZOTAS ATASCADAS <span>$12</span></h3><p>Loaded with nacho cheese, pico de gallo, guacamole, sour cream and signature meat.</p><strong>Ya valió madre la dieta.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-        <article class="product-card reveal churros-card"><div class="image-wrap"><img src="assets/images/churros.webp" alt="Churros"><div class="dip-cup"><span></span><b>Chocolate<br>Dip +$2</b></div></div><div><p class="label">Save Room</p><h3>CHURROS <span>$5</span></h3><p>Regular cinnamon sugar or strawberry filled. Add melted chocolate on the side for $2.</p><strong>Dessert isn’t optional.</strong><a class="mini-btn" href="https://online.skytab.com/02f9266b730891c575a6513e7d0a09b1" target="_blank" rel="noopener">Order pickup</a></div></article>
-      </div>
-    </section>
+
 
     <section class="section love reviews-section reveal">
       <div class="section-head compact">
@@ -231,7 +217,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer"><p class="site-version">Website v24 · Full menu</p>
     <img src="assets/images/logo-transparent.png" alt="La HamburgueZona logo" />
     <p>Mexican Style Premium Burger • Gilroy, California</p>
     <div class="footer-links">
@@ -246,6 +232,6 @@
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/script-v24.js"></script>
 </body>
 </html>
